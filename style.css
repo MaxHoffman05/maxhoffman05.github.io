@@ -1,0 +1,498 @@
+/*
+ * Website Project
+ * Author: Max
+ * Date: 10/11/2024
+ * 
+ * Styles for the html pages
+ */
+
+:root {
+    --main-font: 'JetBrains Mono', monospace, 'Georgia', serif;
+    font-size: 1rem;
+    --text-primary: #e0e0e0;
+    --nv-primary: #3a3a3a;
+    --nv-secondary: #1f1e1e;
+    --bg-primary: #4f4f4f;
+    --coding: #39ff14;
+    --accent-primary: #228b22;
+    --accent-secondary: #008080;
+    --heading-background: #2c2c2c;
+  }
+
+
+
+/* ! Nav bar CSS */
+.icon {
+    background-color: #2a2a2a;
+    border-radius: 10%; /* Make icons circular */
+    padding: 25px;
+    width: 40px;
+    height: 40px;
+}
+
+
+#navbar h1 {
+    color: var(--accent-primary);
+    font-family: var(--main-font);
+    
+}
+
+
+.navIcon {
+    opacity: 0;
+    visibility: hidden; 
+    position: absolute; 
+    top: 100%; 
+    transform: translateY(10px);
+    transition: opacity 0.8s ease, visibility 0.8s ease, transform 0.8s ease; 
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    fill: white;
+   
+    
+}
+
+
+/* for the navbar icons animations */
+#navLinks:hover .navIcon {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); 
+     
+    
+}
+
+/*navbar links*/
+#navLinks {
+    text-decoration: none;    
+    color: var(--accent-primary); 
+    text-align: center;       
+    display: flex;            
+    flex-direction: column;   
+    align-items: center;      
+    font-family: var(--main-font);
+    position: relative;
+    font-size: 1.5rem;
+}
+/*navbar link text*/
+#navLinks:hover {
+    color: var(--accent-secondary);
+    font-size: 2rem;
+}
+
+/* navbar flexbox */
+.navbarMenu {
+    margin: 0;
+    padding: 10px; /* Add some padding to the navbar */
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; /* Center the navbar items */
+    background-color: var(--nv-primary);
+    padding-bottom: 3rem;
+}
+
+.navbarMenu li {
+    position: relative; /* Parent of the navIcon */
+    display: flex;
+    flex-direction: column;  /* Stack text and icon vertically */
+    align-items: center;     /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    list-style-type: none;
+    
+}
+
+#titleLink {
+    text-decoration: none;
+}
+
+
+
+
+/* ! Content CSS*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+.resHeadings {
+    border-bottom: 2px solid var(--accent-primary); 
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-grow: 1;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-primary);
+}
+
+
+/* ! CSS for About Page */
+.about h2 {
+    color: var(--text-primary);
+    background-color: var(--heading-background);
+    font-family: var(--main-font);
+    text-align: center;
+    margin: 2in; /* 1-inch margins */
+    margin-top: 20rem;
+    font-size: 35px;
+}
+
+.CText {
+    color: #FF7F30;
+}
+
+.PythonText {
+    color: #f8981d;
+}
+
+.JavaText {
+    color: #FFD43B;
+}
+
+@keyframes fadeIn {
+    from {
+        scale: .6;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+.wordCloud {
+    max-width: 100%; /* Ensures the image doesn't exceed the screen width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.wordCloudText {
+    font-family: var(--main-font);
+    color: var(--text-primary);
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 7rem;
+}
+
+
+
+/*! CSS for Resume Page*/
+.resContent {
+    padding-bottom: 2rem;
+    line-height: 1.6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+    justify-items: center;
+    font-family: var(--main-font);
+    color: var(--text-primary);
+}
+.resHeadings {
+    color:white;
+    background-color: var(--heading-background);
+    text-align: left;
+    border-radius: 15px;
+    position: relative;
+    padding: 1rem;
+}
+
+.textContent {
+    list-style-type: none;
+    
+}
+
+.textContent .listContent li {
+    padding: 5px;
+}
+ul.listContent, ul.textContent {
+    margin-bottom: 1.5rem; /* Space out list sections */
+}
+
+.resContent h4 {
+    display: inline;
+    background-color: var(--nv-primary);
+    padding: 10px;
+    border-radius: 1rem;
+    
+    
+}
+
+/*! CSS for Project Page*/
+.projContent {
+    display:flex;
+    flex-direction: column;
+    line-height: 1.7;
+    font-family: var(--main-font);
+    color: var(--text-primary);
+    align-items: center;
+    
+}
+.introProj {
+    margin-top: 3rem;
+    background-color: var(--nv-primary);
+    margin-right: 3rem;
+    margin-left: 3rem;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+    
+}
+.github-logo {
+    background-color: black;
+    border-radius: 3rem;
+    fill: white;
+    width: 4rem;
+    height: 4rem;
+    transition: fill 0.3s ease;
+}
+.github-logo:hover, .projList a:hover {
+    fill: var(--accent-secondary);
+    color: var(--accent-secondary);
+}
+.projList {
+    list-style-type: none;
+}
+
+.projList li {
+    background-color: var(--nv-secondary);
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.projList a, h2 { 
+    background-color: var(--nv-primary);
+    border-radius: 10px;
+    color: white;
+
+}
+.projList a:hover {
+    background-color: var(--accent-primary);
+    text-shadow: 1px 1px 5px #000;
+}
+
+
+.projContent p {
+    padding: 30px;
+    text-indent: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+ }
+
+.projContent h2 {
+    background-color: var(--heading-background);
+}
+.projContent img {
+    padding: 1.5rem;
+    max-width: 100%;
+    
+}
+
+
+/*! CSS for footer links */
+.footerLinks {
+    background-color: black;
+    
+    bottom: 0;
+    left: 0; /* Align to the left */
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.footerLinks ul {
+    list-style-type: none; /* Remove default bullet points */
+    display: flex; /* Enable flex on the ul to align items horizontally */
+    justify-content: center; /* Center the items within the ul */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+}
+
+.footerLinks li {
+    flex: 1;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.footerLinks li svg {
+    width: 25px;
+    height: 25px;
+}
+
+/* footer links */
+#profLinks {
+    color: white;
+}
+
+#profLinks:hover {
+    color: var(--accent-secondary);
+}
+
+
+
+
+/*! Compatibility*/
+/* For desktops */
+@media (min-width: 768px) {
+    .navbarMenu {
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .navbarMenu li {
+        flex: 1; /* Share space equally on larger screens */
+    }
+
+    .icon {
+        width: 100px; /* Larger size for desktops */
+        height: 100px;
+    }
+   
+    /*Followed Youtube tutorial to get this cool effect for the resume headings, slightly modified since they are rectangles*/
+    /*https://youtu.be/ezP4kbOvs_E?si=oU2hdXnrwkz9f_mC*/
+    /*
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+    .resHeadings::after, .card::before {
+        margin-left: 3px;
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: conic-gradient(from var(--angle), transparent 65%,#228b22);
+        background-size: 100%, 100%;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: -1;
+        padding: 5px;
+        border-radius: 10px;
+        animation: spin 5s ease-in-out infinite;
+    }
+
+    .card::before {
+        filter: blur(1.3rem);
+        opacity: 0.5;
+    }
+    @keyframes spin {
+        from {
+            --angle: 0deg;
+        }
+        to {
+            --angle: 360deg;
+        }
+    }
+    */
+    
+    
+}
+
+/*for smaller screens*/
+@media (max-width: 767px) {
+    .wrapper {
+        padding: 1rem; /* Decrease padding */
+    }
+    
+    .content {
+        margin: 1rem; /* Reduce margin */
+    }
+    .about h2 {
+        font-size: 1.2rem;
+        margin: 1rem; 
+        padding: 1rem;
+        text-align: center; 
+    }
+
+    .wordCloudText {
+        font-size: 1rem; 
+        margin: 1rem; 
+        text-align: center; 
+    }
+
+    .wordCloud {
+        max-width: 90%; /* Ensure image fits within mobile viewport */
+        height: auto;
+    }
+
+    .wordCloudText {
+        font-size: 1rem; /* Smaller font for mobile */
+        text-align: center;
+    }
+
+    .navbarMenu {
+        flex-direction: column; 
+        align-items: center;    
+        padding-bottom: 4rem;
+    }
+
+    .navbarMenu li {
+        margin: 10px 0; 
+        margin-top: 4rem;
+    }
+    
+    .resHeadings {
+        font-size: 2rem; 
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        
+    }
+    .resContent {
+        align-items: left;
+        justify-content: left;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 2;
+    }
+    .resContent h4 {
+        font-size: 14px;
+    }
+    .github-logo {
+        margin-bottom: 1rem;
+    }
+    .introProj p strong {
+        font-weight: bold;
+        color: var(--accent-primary);
+    }
+    .introProj {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem; 
+        margin: 1rem 0; 
+        background-color: var(--nv-primary);  
+        border-radius: 30px;
+    }
+    .introProj p {
+        font-size: 1.2rem; /* Slightly larger for better readability */
+        line-height: 1.6; /* Increase spacing between lines */
+        text-align: center; /* Center the text for mobile screens */
+    }
+}
