@@ -8,11 +8,12 @@ Link to see this code in action:
 
 I made this Github Pages Website with HTML and CSS with a little JavaScript.
 
-Its made up of three pages:
+Its made up of four pages:
 
     - index.html
     - resume.html
     - projects.html
+    - recentProjs.html
 
 The navigation bar and footer bar are stored separately in HTML files: nav.html and footer.html.
 
