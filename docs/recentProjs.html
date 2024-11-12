@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <script src="index.js" defer></script><!--script to put navigation and footer bars with links from nav.html and footer.html-->
+    <script>
+        /*Found on Stack Overflow to prevent style warning when loading page*/
+        /*to prevent Firefox FOUC, this must be here*/
+        let FF_FOUC_FIX;
+    </script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header id="navbar"></header>
+        <div class="recentProjsContent">
+            <div class="introRecent"><h1>Recent Projects I </br> have been working on</h1></div>
+            
+            <p class="descriptorRecent">In order of last completed...</p>
+            <ul class="recLinks">
+                <li><a href="https://github.com/MaxHoffman05/coverLetterWizard"><h2> > Cover Letter Wizard - Oct 2024</h2></a></li>
+                <p>
+                    I developed this short Python script to semi-automate the process of creating cover letters. I knew that my previous method of creating cover letters could be 
+                    improved and I could cut down on the work I knew could be automated. Examples of this include: automatically importing the date, changing the name of the company 
+                    and position in my opening paragraph. Another reason I wanted to create this script was so I could store and display all the different cover letter paragraphs I 
+                    have previously written to make them more easily accessible if they were applicable to a job I am currently applying for. I made this to be able to focus all my 
+                    effort on creating the best cover letter instead of changing dates, company names etc.
+                </p>
+                <p> If you would like to clone this repository run the command below: </p>
+                <code class="gitCommand">git clone https://github.com/MaxHoffman05/coverLetterWizard</code>
+            </ul>
+            
+            
+        </div>
+        <footer id="linkfooter"></footer>
+    </div>
+    
+    
+</body>
+</html>
