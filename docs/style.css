@@ -23,11 +23,14 @@
 
 /* ! Nav bar CSS */
 .icon {
-    background-color: #2a2a2a;
-    border-radius: 10%; /* Make icons circular */
-    padding: 25px;
-    width: 40px;
-    height: 40px;
+    
+    max-width: 125px; /* Increase the width of the image in mobile view */
+    background-color: var(--nv-secondary);
+    border-radius: 50%; /* Make icons circular */
+    padding: 5px;
+    
+    height: auto;
+   
 }
 
 
@@ -445,10 +448,7 @@ footer {
         flex: 1; /* Share space equally on larger screens */
     }
 
-    .icon {
-        width: 100px; /* Larger size for desktops */
-        height: 100px;
-    }
+    
 }
 
 /*for smaller screens*/
@@ -537,5 +537,11 @@ footer {
     .gitCommand {
         font-size: 0.9rem;
         margin-bottom: 2rem;
+    }
+    .icon {
+        width: 200px;
+        max-width: 200px; /* Increase the width of the image in mobile view */
+        height: auto;
+        
     }
 }
