@@ -132,6 +132,7 @@ body {
   margin: 2in; /* 1-inch margins */
   margin-top: 20rem;
   font-size: 35px;
+  padding: 1rem;
 }
 
 .CText {
@@ -171,6 +172,16 @@ body {
   margin-top: 1rem;
   font-size: 1.5rem;
   margin-bottom: 7rem;
+}
+.repoLink {
+  font-family: var(--main-font);
+  color: var(--text-primary);
+  padding: 2rem;
+}
+
+.repoLink a {
+  color: var(--accent-primary);
+  text-decoration: none;
 }
 
 /*! CSS for Resume Page*/
