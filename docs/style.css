@@ -223,6 +223,15 @@ ul.textContent {
   padding: 10px;
   border-radius: 1rem;
 }
+.downloadRes {
+  text-align: center;
+  margin: 0 auto;
+}
+.downloadRes a {
+  font-size: larger;
+  color: var(--accent-primary);
+  font-weight: bold;
+}
 
 /*! CSS for Project Page*/
 .projContent {
