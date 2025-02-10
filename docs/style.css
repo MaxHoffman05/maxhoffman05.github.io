@@ -186,31 +186,34 @@ body {
 
 /*! CSS for Resume Page*/
 .resContent {
+  text-align: left; /* Ensures text is aligned to the left */
+  margin-left: 2rem; /* Removes any unintended left margin */
+  padding-left: 0; /* Removes any extra padding */
+  display: block; /* Ensures it behaves as a block element */
+  width: 100%;
+
   padding-bottom: 2rem;
   line-height: 1.6;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  flex-grow: 1;
-  justify-items: center;
+
   font-family: var(--main-font);
   color: var(--text-primary);
 }
 .resHeadings {
+  width: 90%;
+  display: block; /* Ensure block-level behavior */
   color: white;
   background-color: var(--heading-background);
   text-align: left;
-  border-radius: 15px;
+  border-radius: 1rem;
   position: relative;
   padding: 1rem;
+  font-size: 1.5rem;
 }
-
-.textContent {
-  list-style-type: none;
+.skillsContent li {
+  list-style: none;
 }
-
 .textContent .listContent li {
-  padding: 5px;
+  padding: 1rem;
 }
 ul.listContent,
 ul.textContent {
@@ -220,18 +223,26 @@ ul.textContent {
 .resContent h4 {
   display: inline;
   background-color: var(--nv-primary);
-  padding: 10px;
+  padding: 1rem;
   border-radius: 1rem;
 }
 .downloadRes {
-  text-align: center;
-  margin: 0 auto;
+  text-align: left;
+  margin-left: 1rem;
+  background-color: var(--nv-secondary);
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 .downloadRes a,
 .downloadRes a:visited {
   font-size: larger;
   color: var(--accent-primary) !important;
   font-weight: bold;
+  text-decoration: none;
+}
+.downloadRes a:hover {
+  color: var(--accent-secondary) !important;
 }
 
 /*! CSS for Project Page*/
