@@ -227,9 +227,10 @@ ul.textContent {
   text-align: center;
   margin: 0 auto;
 }
-.downloadRes a {
+.downloadRes a,
+.downloadRes a:visited {
   font-size: larger;
-  color: var(--accent-primary);
+  color: var(--accent-primary) !important;
   font-weight: bold;
 }
 
